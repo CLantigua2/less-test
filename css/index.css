@@ -86,7 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -129,14 +128,23 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 html,
 body {
   height: 100%;
 }
+.bordered {
+  border-top: 1px dotted #1ad41a;
+  border-bottom: 1px solid red;
+}
+.list {
+  font-size: 1.6rem;
+  color: #f7efef;
+}
 header nav {
   width: 100%;
-  background: lightblue;
+  background: #1e5163;
 }
 header nav ul {
   display: flex;
@@ -145,4 +153,8 @@ header nav ul {
 }
 header nav ul li {
   margin: 20px 0 20px 0;
+  font-size: 1.6rem;
+  color: #f7efef;
+  border-top: 1px dotted #1ad41a;
+  border-bottom: 1px solid red;
 }

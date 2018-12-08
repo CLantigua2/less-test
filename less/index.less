@@ -17,11 +17,9 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	font-size: 62.5%;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	// font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -51,24 +49,42 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 html, body {
 		height: 100%;
 }
 
+@green: rgb(26, 212, 26);
+@blue: rgb(30, 81, 99);
+@red: red;
+@white: rgb(247, 239, 239);
+@regularFont: 1.6rem;
+
+.bordered {
+	border-top: 1px dotted @green;
+	border-bottom: 1px solid @red;
+}
+
+.list {
+	font-size: @regularFont;
+	color: @white;
+}
+
 header {
 	nav {
 		width: 100%;
-		background: lightblue;
+		background: @blue;
 		ul {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
 			li{
 				margin: 20px 0 20px 0;
-				font-size: 6rem;
+				.list();
+				.bordered();
 			}
 		}
 	}
